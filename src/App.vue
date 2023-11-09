@@ -7,7 +7,7 @@
   </main>
 
   <footer>
-    footer
+    <UpFooterDC />
   </footer>
 </template>
 
@@ -16,12 +16,14 @@
 import HeaderDC from './components/HeaderDC.vue';
 import MainDC from './components/MainDC.vue';
 import SectionDC from './components/SectionDC.vue';
+import UpFooterDC from './components/UpFooterDC.vue';
 export default {
   name: "App",
   components: {
     HeaderDC,
     MainDC,
     SectionDC,
+    UpFooterDC
   },
   data() {
     return {}

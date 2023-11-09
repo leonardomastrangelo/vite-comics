@@ -7,10 +7,28 @@ body {
 header a {
     color: $dc-tertiary;
 }
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 #content {
     color: $dc-light;
     background-color: $dc-secondary;
 }
 #buy-links {
     background-color: $dc-primary;
+}
+#up-footer {
+    background-image: url(/images/footer-bg.jpg);
+    background-size: cover;
+}
+h3 {
+    font-size: 1.4em;
+}
+footer {
+    overflow: hidden;
 }
