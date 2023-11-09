@@ -1,9 +1,15 @@
 <template>
     <section id="up-footer">
         <div class="container">
-            <div class="row">
+            <div class="row flex-xl-row-reverse">
                 <!-- left -->
-                <div class="col-6 d-flex py-5">
+                <div class="col-12 col-xl-6 d-flex justify-content-center overflow-hidden">
+
+                    <img src="/images/dc-logo-bg.png" alt="dc-logo">
+
+                </div>
+                <!-- right -->
+                <div class="col-12 col-xl-6 d-flex py-5 justify-content-center">
                     <div class="col-3">
                         <h3 class="text-uppercase">dc comics</h3>
                         <ul class="pb-3">
@@ -44,12 +50,6 @@
                             </li>
                         </ul>
                     </div>
-
-                </div>
-                <!-- right -->
-                <div class="col-6 d-flex justify-content-center overflow-hidden">
-
-                    <img src="/images/dc-logo-bg.png" alt="dc-logo">
 
                 </div>
             </div>
@@ -181,13 +181,8 @@ a {
     font-size: 0.75em;
 }
 
-h3 {
-    color: white;
-    font-weight: 600;
-}
-
 img {
-    width: 400px;
+    max-width: 400px;
     transform: scale(1.4);
 }
 </style>

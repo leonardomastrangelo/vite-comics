@@ -7,9 +7,11 @@
         <!-- NAV-BAR -->
         <ul class="d-flex align-items-stretch">
             <li v-for="(item, index) in headerLinks" :key="index" class="px-3 d-flex align-items-center position-relative">
-                <a :class="{ 'active-item': item.focused }" @click.prevent="activeLink(item)" :href="item.href">{{
-                    item.link.toUpperCase()
-                }}</a>
+                <a :class="{ 'active-item': item.focused }" @click.prevent="activeLink(item)" :href="item.href">
+                    {{
+                        item.link.toUpperCase()
+                    }}
+                </a>
                 <div class="active-bar" v-show="item.focused">
                 </div>
             </li>
@@ -92,9 +94,7 @@ ul {
     list-style: none;
 
     a {
-        text-decoration: none;
         font-weight: 600;
-
     }
 
     .active-bar {

@@ -2,10 +2,12 @@
     <section id="buy-links">
         <div class="container py-5">
             <div class="row justify-content-around align-items-center">
-                <div class="col-2" v-for="(item, index) in buyList" :key="index">
-                    <div class="d-flex align-items-center">
+                <div class="col-12 col-lg-2" v-for="(item, index) in buyList" :key="index">
+                    <div class="d-flex align-items-center justify-content-center py-2">
                         <img class="comic-item" :src="item.img" :alt="item.text">
-                        <a :href="item.href"> {{ item.text.toUpperCase() }}</a>
+                        <a :href="item.href">
+                            {{ item.text.toUpperCase() }}
+                        </a>
                     </div>
                 </div>
             </div>
@@ -58,7 +60,6 @@ export default {
 }
 
 a {
-    text-decoration: none;
     color: white;
     display: block;
 }
