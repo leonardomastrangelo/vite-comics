@@ -2,7 +2,7 @@
   <HeaderDC />
 
   <main>
-    main
+    <ContentDC />
   </main>
 
   <footer>
@@ -13,10 +13,12 @@
 <script>
 // components
 import HeaderDC from './components/HeaderDC.vue';
+import ContentDC from './components/ContentDC.vue';
 export default {
   name: "App",
   components: {
     HeaderDC,
+    ContentDC
   },
   data() { },
   methods: {},
