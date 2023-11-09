@@ -5,9 +5,12 @@
             <img src="/images/dc-logo.png" alt="dc-logo">
         </div>
         <!-- NAV-BAR -->
-        <ul class="d-flex align-items-center">
-            <li v-for="(item, index) in headerLinks" :key="index" class="px-3">
-                <a @click.prevent :href="item.href">{{ item.link.toUpperCase() }}</a>
+        <ul class="d-flex align-items-stretch">
+            <li v-for="(item, index) in headerLinks" :key="index" class="px-3 d-flex align-items-center position-relative">
+                <a :class="{ 'active-item': item.focused }" @click.prevent :href="item.href">{{ item.link.toUpperCase()
+                }}</a>
+                <div class="active-bar" v-show="item.focused">
+                </div>
             </li>
         </ul>
     </header>
@@ -26,7 +29,7 @@ export default {
                 },
                 {
                     link: "comics",
-                    focused: false,
+                    focused: true,
                     href: "#"
                 },
                 {
@@ -82,6 +85,21 @@ ul {
     a {
         text-decoration: none;
         font-weight: 600;
+
     }
+
+    .active-bar {
+        width: 100%;
+        height: 5px;
+        background-color: #0282F9;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+}
+
+.active-item {
+    color: #0282F9;
 }
 </style>

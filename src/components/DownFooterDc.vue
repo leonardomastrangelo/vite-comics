@@ -9,7 +9,7 @@
                 <h4 class="text-uppercase pe-3">follow us</h4>
                 <ul class="d-flex">
                     <li v-for="(social, index) in socials" class="px-3">
-                        <a :href="social.href">
+                        <a @click.prevent :href="social.href">
                             <img :src="social.image" :alt="social.image">
                         </a>
                     </li>
@@ -55,9 +55,10 @@ export default {
 <style lang="scss" scoped>
 button {
     text-transform: uppercase;
-    padding: 10px;
+    padding: 15px;
     border: 2px solid #0282F9;
     background-color: transparent;
     color: white;
+    font-weight: 600;
 }
 </style>
