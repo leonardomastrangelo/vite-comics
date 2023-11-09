@@ -7,7 +7,8 @@
         <!-- NAV-BAR -->
         <ul class="d-flex align-items-stretch">
             <li v-for="(item, index) in headerLinks" :key="index" class="px-3 d-flex align-items-center position-relative">
-                <a :class="{ 'active-item': item.focused }" @click.prevent :href="item.href">{{ item.link.toUpperCase()
+                <a :class="{ 'active-item': item.focused }" @click.prevent="activeLink(item)" :href="item.href">{{
+                    item.link.toUpperCase()
                 }}</a>
                 <div class="active-bar" v-show="item.focused">
                 </div>
@@ -73,6 +74,14 @@ export default {
                     href: "#"
                 },
             ]
+        }
+    },
+    methods: {
+        activeLink(link) {
+            this.headerLinks.forEach((link => {
+                link.focused = false
+            }))
+            link.focused = !link.focused
         }
     }
 }
