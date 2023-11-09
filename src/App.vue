@@ -2,7 +2,8 @@
   <HeaderDC />
 
   <main>
-    <ContentDC />
+    <MainDC />
+    <SectionDC />
   </main>
 
   <footer>
@@ -13,14 +14,18 @@
 <script>
 // components
 import HeaderDC from './components/HeaderDC.vue';
-import ContentDC from './components/ContentDC.vue';
+import MainDC from './components/MainDC.vue';
+import SectionDC from './components/SectionDC.vue';
 export default {
   name: "App",
   components: {
     HeaderDC,
-    ContentDC
+    MainDC,
+    SectionDC,
   },
-  data() { },
+  data() {
+    return {}
+  },
   methods: {},
 }
 </script>

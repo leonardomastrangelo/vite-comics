@@ -7,9 +7,10 @@ body {
 header a {
     color: $dc-tertiary;
 }
-main {
-    background-color: $dc-secondary;
-}
 #content {
     color: $dc-light;
+    background-color: $dc-secondary;
+}
+#buy-links {
+    background-color: $dc-primary;
 }
