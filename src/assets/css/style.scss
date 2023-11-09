@@ -29,6 +29,11 @@ ul {
 h3 {
     font-size: 1.4em;
 }
-footer {
-    overflow: hidden;
+aside {
+    background-color: $dc-tertiary;
+}
+h4 {
+    text-transform: uppercase;
+    color: $dc-primary;
+    font-weight: 600;
 }

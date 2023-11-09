@@ -8,7 +8,7 @@
                         <h3 class="text-uppercase">dc comics</h3>
                         <ul class="pb-3">
                             <li v-for="(item, index) in dcComics" :key="index">
-                                <a class="text-capitalize" :href="item.href">
+                                <a @click.prevent class="text-capitalize" :href="item.href">
                                     {{ item.link }}
                                 </a>
                             </li>
@@ -16,7 +16,7 @@
                         <h3 class="text-uppercase">shop</h3>
                         <ul>
                             <li v-for="(item, index) in shop" :key="index">
-                                <a :href="item.href">
+                                <a :href="item.href" @click.prevent>
                                     {{ item.link }}
                                 </a>
                             </li>
@@ -27,7 +27,7 @@
                         <h3 class="text-uppercase">dc</h3>
                         <ul>
                             <li v-for="(item, index) in dc" :key="index">
-                                <a class="text-capitalize" :href="item.href">
+                                <a @click.prevent class="text-capitalize" :href="item.href">
                                     {{ item.link }}
                                 </a>
                             </li>
@@ -38,7 +38,7 @@
                         <h3 class="text-uppercase">sites</h3>
                         <ul>
                             <li v-for="(item, index) in sites" :key="index">
-                                <a class="text-capitalize" :href="item.href">
+                                <a @click.prevent class="text-capitalize" :href="item.href">
                                     {{ item.link }}
                                 </a>
                             </li>
@@ -47,10 +47,10 @@
 
                 </div>
                 <!-- right -->
-                <div class="col-6">
-                    <div>
-                        <img src="/images/dc-logo-bg.png" alt="dc-logo">
-                    </div>
+                <div class="col-6 d-flex justify-content-center overflow-hidden">
+
+                    <img src="/images/dc-logo-bg.png" alt="dc-logo">
+
                 </div>
             </div>
         </div>
@@ -187,6 +187,7 @@ h3 {
 }
 
 img {
-    transform: scale(1.3);
+    width: 400px;
+    transform: scale(1.4);
 }
 </style>
