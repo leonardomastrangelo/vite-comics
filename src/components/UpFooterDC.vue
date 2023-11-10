@@ -1,6 +1,6 @@
 <template>
     <section id="up-footer">
-        <div class="container">
+        <div class="container-md">
             <div class="row flex-xl-row-reverse">
                 <!-- left -->
                 <div class="col-12 col-xl-6 d-flex justify-content-center overflow-hidden">
